@@ -1,3 +1,6 @@
+using AccesoDatos.EF;
+using Microsoft.EntityFrameworkCore;
+
 namespace FrontEnd
 {
     public class Program
@@ -8,6 +11,10 @@ namespace FrontEnd
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            // Add Entity Framework services
+            string connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+            builder.Services.AddDbContext<OrtContext>(options => options.UseSqlServer(connectionString));
 
             var app = builder.Build();
 

@@ -8,7 +8,11 @@
 
   <ItemGroup>
     <Folder Include="DTOs\" />
-    <Folder Include="InterfacesCasosUso\" />
+    <Folder Include="InterfacesCasosUso\Empleado\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LogicaDeNegocio\LogicaNegocio.csproj" />
   </ItemGroup>
 
 </Project>
