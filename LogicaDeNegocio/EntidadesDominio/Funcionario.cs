@@ -9,7 +9,7 @@ namespace LogicaNegocio.EntidadesDominio
 {
     public class Funcionario: Empleado
     {
-        public Funcionario(string nombre, string apellido, string email, string password)
-            : base(nombre, apellido, email, password) { }
+        public Funcionario(string nombre, string apellido, string email, string password, Rol rol)
+            : base(nombre, apellido, email, password, rol) { }
     }
 }

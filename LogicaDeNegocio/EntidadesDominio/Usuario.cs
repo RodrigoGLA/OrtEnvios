@@ -14,12 +14,14 @@ namespace LogicaNegocio.EntidadesDominio
         public string Apellido { get; private set; }
         public string Email { get; private set; }
         public string Password { get; private set; }
-        protected Usuario(string nombre, string apellido , string email, string password)
+        public Rol Rol { get; private set; }
+        protected Usuario(string nombre, string apellido , string email, string password, Rol rol)
         {
             this.Nombre = nombre;
             this.Apellido = apellido;
             this.Email = email;
             this.Password = password;
+            this.Rol = rol;
         }
     }
 }

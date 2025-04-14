@@ -10,8 +10,8 @@ namespace LogicaNegocio.EntidadesDominio
     public class Cliente : Usuario
     {
         public List<Urgente> EnviosUrgentes { get; }
-        public Cliente(string nombre, string apellido, string email, string password)
-            : base(nombre, apellido, email, password)
+        public Cliente(string nombre, string apellido, string email, string password, Rol rol)
+            : base(nombre, apellido, email, password, rol)
         {
             EnviosUrgentes = new List<Urgente>();
         }
