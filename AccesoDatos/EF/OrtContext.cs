@@ -18,6 +18,10 @@ namespace AccesoDatos.EF
         public DbSet<Agencia> Agencias { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Urgente> Urgentes { get; set; }
+        public DbSet<Comun> Comunes { get; set; }
+        public DbSet<Empleado> Empleados { get; set; }
+        public DbSet<Funcionario> Funcionarios { get; set; }
+        public DbSet<Administrador> Administradores { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Configuración de las entidades
@@ -26,8 +30,13 @@ namespace AccesoDatos.EF
             modelBuilder.Entity<Agencia>().ToTable("Agencias");
             modelBuilder.Entity<Cliente>().ToTable("Clientes");
             modelBuilder.Entity<Urgente>().ToTable("Urgentes");
+            modelBuilder.Entity<Comun>().ToTable("Comunes");
+            modelBuilder.Entity<Empleado>().ToTable("Empleados");
+            modelBuilder.Entity<Funcionario>().ToTable("Funcionarios");
+            modelBuilder.Entity<Administrador>().ToTable("Administradores");
+
         }
     }
-    {
+    
     }
-}
+

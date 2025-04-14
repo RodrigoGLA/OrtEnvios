@@ -8,16 +8,15 @@ namespace LogicaNegocio.EntidadesDominio
 {
     public class Agencia
     {
-        public readonly int IdAgencia;
-        public string DireccionPostal;
-        public string Latitud;
-        public string Longitud;
-        public List<Usuario> Usuarios;
-        public List<Envio> Envios;
+        public int Id { get; private set; }
+        public string DireccionPostal { get; set; }
+        public string Latitud { get; set; }
+        public string Longitud { get; set; }
+        public List<Usuario> Usuarios { get; set; }
+        public List<Envio> Envios { get; set; }
 
         public Agencia (string direccionPostal, string latitud, string longitud)
         {
-            this.IdAgencia++;
             this.DireccionPostal = direccionPostal;
             this.Latitud = latitud;
             this.Longitud = longitud;

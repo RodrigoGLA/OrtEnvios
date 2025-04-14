@@ -8,8 +8,8 @@ namespace LogicaNegocio.EntidadesDominio
 {
     public class Comun : Envio
     {
-        string Agencia { get; set; }
-        public Comun(int idEnvio, int numeroTracking, string pesoPaquete, string estado, string agencia) : base(idEnvio, numeroTracking, pesoPaquete, estado)
+        public string Agencia { get; set; }
+        public Comun(int numeroTracking, string pesoPaquete, string estado, string agencia) : base(numeroTracking, pesoPaquete, estado)
         {
             Agencia = agencia;
         }

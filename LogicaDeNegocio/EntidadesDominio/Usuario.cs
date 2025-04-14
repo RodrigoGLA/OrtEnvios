@@ -9,14 +9,17 @@ namespace LogicaNegocio.EntidadesDominio
 {
     public abstract class Usuario
     {
+        public int Id { get; private set; }
+        public string Nombre { get; private set; }
+        public string Apellido { get; private set; }
         public string Email { get; private set; }
         public string Password { get; private set; }
-        public Rol Rol { get; private set; }
-        protected Usuario(string email, string password, Rol rol)
+        protected Usuario(string nombre, string apellido , string email, string password)
         {
+            this.Nombre = nombre;
+            this.Apellido = apellido;
             this.Email = email;
             this.Password = password;
-            this.Rol = rol;
         }
     }
 }

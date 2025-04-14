@@ -9,10 +9,10 @@ namespace LogicaNegocio.EntidadesDominio
 {
     public class Administrador: Empleado
     {
-        public Administrador(string email, string password, Rol rol)
-            : base(email, password, rol) { }
+        public Administrador(string nombre, string apellido, string email, string password)
+            : base(nombre, apellido, email, password) { }
 
-        private void AltaEmpleado(string email, string password, Rol rol) { }
+        private void AltaEmpleado(string email, string password) { }
         private void BajaEmpleado(Empleado empleado) { }
         private void EditarEmpleado(Empleado empleado) { }
 

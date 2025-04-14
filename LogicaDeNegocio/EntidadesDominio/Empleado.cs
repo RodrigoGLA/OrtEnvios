@@ -9,8 +9,8 @@ namespace LogicaNegocio.EntidadesDominio
 {
     public class Empleado : Usuario
     {
-        public Empleado(string email, string password, Rol rol)
-            : base(email, password, rol){}
+        public Empleado(string nombre, string apellido, string email, string password)
+            : base(nombre, apellido, email, password){}
         void Login(string email, string password)
         {
             // Implementar la lógica de inicio de sesión
