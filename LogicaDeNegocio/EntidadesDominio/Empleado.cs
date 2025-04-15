@@ -16,6 +16,8 @@ namespace LogicaNegocio.EntidadesDominio
             // Implementar la lógica de inicio de sesión
             // Por ejemplo, verificar si el correo electrónico y la contraseña son correctos
         }
+
+        public Empleado() : base() { }
         void CerrarSesion() {}
         void AltaEnvio(Envio envio) { }
         void Comentar(string comentario) { }

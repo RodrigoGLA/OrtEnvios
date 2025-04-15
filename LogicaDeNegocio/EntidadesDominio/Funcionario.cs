@@ -11,5 +11,6 @@ namespace LogicaNegocio.EntidadesDominio
     {
         public Funcionario(string nombre, string apellido, string email, string password, Rol rol)
             : base(nombre, apellido, email, password, rol) { }
+        public Funcionario() : base() { }
     }
 }

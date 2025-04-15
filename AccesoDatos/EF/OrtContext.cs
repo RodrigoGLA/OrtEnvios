@@ -24,6 +24,14 @@ namespace AccesoDatos.EF
         public DbSet<Administrador> Administradores { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            // Configuración de las propiedades de las entidades
+            modelBuilder.Entity<Usuario>()
+                .Property(u => u.Rol)
+                .HasConversion<int>();
+            
+                
+
             // Configuración de las entidades
             modelBuilder.Entity<Usuario>().ToTable("Usuarios");
             modelBuilder.Entity<Envio>().ToTable("Envios");

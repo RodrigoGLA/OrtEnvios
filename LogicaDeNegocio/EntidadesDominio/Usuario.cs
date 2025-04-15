@@ -14,7 +14,7 @@ namespace LogicaNegocio.EntidadesDominio
         public string Apellido { get; private set; }
         public string Email { get; private set; }
         public string Password { get; private set; }
-        public Rol Rol { get; private set; }
+        public Rol? Rol { get; set; }
         protected Usuario(string nombre, string apellido , string email, string password, Rol rol)
         {
             this.Nombre = nombre;
@@ -23,5 +23,6 @@ namespace LogicaNegocio.EntidadesDominio
             this.Password = password;
             this.Rol = rol;
         }
+        public Usuario() { }
     }
 }

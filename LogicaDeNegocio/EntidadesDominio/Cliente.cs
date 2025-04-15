@@ -16,5 +16,10 @@ namespace LogicaNegocio.EntidadesDominio
             EnviosUrgentes = new List<Urgente>();
         }
 
+        public Cliente() : base()
+        {
+            EnviosUrgentes = new List<Urgente>();
+        }
+
     }
 }
